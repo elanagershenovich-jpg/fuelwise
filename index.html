@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FuelWise Muscle Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <h2>FUELWISE</h2>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Muscle Guide</a>
+            <a href="#">Nutrition</a>
+            <a href="#">Workouts</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- LEFT PANEL -->
+        <aside class="left-panel">
+
+            <div class="view-box">
+                <h4>VIEW</h4>
+
+                <div class="toggle">
+                    <button id="frontBtn">Front</button>
+                    <button id="backBtn">Back</button>
+                </div>
+            </div>
+
+            <div class="instructions">
+                <h4>Instructions</h4>
+                <p>🖱 Click a muscle to learn more</p>
+                <p>🔄 Switch front/back view</p>
+                <p>🔍 Scroll to zoom (optional)</p>
+            </div>
+
+        </aside>
+
+        <!-- BODY SECTION -->
+        <section class="body-section">
+
+            <div class="body-wrapper">
+
+                <img id="bodyImage" src="body-front.png" alt="Human Body">
+
+                <!-- HOTSPOTS -->
+                <button class="muscle chest" data-muscle="Chest"></button>
+                <button class="muscle shoulders" data-muscle="Shoulders"></button>
+                <button class="muscle biceps" data-muscle="Biceps"></button>
+                <button class="muscle triceps" data-muscle="Triceps"></button>
+                <button class="muscle abs" data-muscle="Abs"></button>
+                <button class="muscle back" data-muscle="Back"></button>
+                <button class="muscle glutes" data-muscle="Glutes"></button>
+                <button class="muscle quads" data-muscle="Quadriceps"></button>
+                <button class="muscle hams" data-muscle="Hamstrings"></button>
+                <button class="muscle calves" data-muscle="Calves"></button>
+
+            </div>
+
+        </section>
+
+        <!-- RIGHT PANEL -->
+        <aside class="info-panel">
+
+            <h2 id="muscleTitle">Chest</h2>
+
+            <h4>What It Does</h4>
+            <p id="muscleDescription">
+                Click a muscle to see details.
+            </p>
+
+            <h4>Common Exercises</h4>
+            <ul id="exerciseList"></ul>
+
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <button onclick="showMuscle('Chest')">Chest</button>
+        <button onclick="showMuscle('Shoulders')">Shoulders</button>
+        <button onclick="showMuscle('Biceps')">Biceps</button>
+        <button onclick="showMuscle('Triceps')">Triceps</button>
+        <button onclick="showMuscle('Abs')">Abs</button>
+        <button onclick="showMuscle('Back')">Back</button>
+        <button onclick="showMuscle('Glutes')">Glutes</button>
+        <button onclick="showMuscle('Quadriceps')">Quads</button>
+        <button onclick="showMuscle('Hamstrings')">Hamstrings</button>
+        <button onclick="showMuscle('Calves')">Calves</button>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
